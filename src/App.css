@@ -1,0 +1,143 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  text-decoration:none;
+  list-style:none;
+}
+body{
+  background-color: #f1f2f6;
+}
+.container{
+  width: 1000px;
+  max-width: 95%;
+  margin: 20px auto;
+ 
+}
+ 
+.bill-image{
+  width: 125px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-image: url(./images/billgates.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 30px 20px;
+  font-size: 25px;
+  background-color: white;
+}
+.money-bar{
+  margin: 10px 0;
+  padding: 20px;
+  background: linear-gradient( #2ecc71, #1abc9c);
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+.products{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+   
+}
+.product img{
+  width: 120px;
+  height: 100%;
+  object-fit: contain;
+  
+}
+.prd-img{
+  height: 50%;
+}
+.product{
+  height: 300px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+   
+}
+.amount{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 25px;
+}
+.amount button , .amount input{
+  padding: 10px 12px;
+}
+.sell, .buy, .count{
+  border: 1px solid grey;
+  border-radius: 3px;
+  width: calc(calc(100% / 3) - calc(2 * 5px));
+  font-size: 16px;
+  font-weight: 600;
+}
+.sell{
+  background-color: #f53b82;
+  color:white;
+  cursor: pointer;
+}
+.sell:disabled{
+  background-color: #f1f2f6;
+  color: grey;
+  cursor: default;
+}
+.buy{
+  background: linear-gradient(#2ecc71, #1abc9c);
+  color: white;
+  cursor: pointer;
+
+}
+.title{
+  margin-top: 15px;
+  color: #333333;
+  font-size: 22px;
+  font-weight: 700;
+}
+.price{
+  color: #24C486;
+  font-size: 20px;
+  font-weight: 800;
+}
+.recipe-title{
+  width: 100%;
+  background-color: white;
+  margin-top: 15px;
+  padding: 30px;
+  height: max-content;
+}
+.base-recipe{
+  width: 350px;
+  margin: 0 auto;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.recipe-title h1{
+
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.base-recipe div{
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 20px;
+  justify-content: space-between; 
+  
+}
+.recipe-green{
+  color: #1abc9c;
+  font-weight: 800;
+}
